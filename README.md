@@ -164,4 +164,4 @@ shared_scripts {
 	'utils/rpc.lua',
 	'utils/utils.lua',
 	'@ox_lib/init.lua',
-}```
+}
