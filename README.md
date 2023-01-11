@@ -3,7 +3,7 @@
 **Quasar Housing** using **ox_lib**
 
 ```lua
--- * config_minigames.lua (1st part lockpick)
+-- * config_minigames.lua
 -- ox_lib link : https://github.com/overextended/ox_lib
 -- Enjoy !
 
@@ -81,11 +81,6 @@ AddEventHandler('qs-housing:client:Lockpicking', function()
         SendTextMessage(Lang("NO_HOUSES_NEARBY"), 'error')
     end
 end)
-
-```lua
--- Police Raid using ox_lib
--- Second part of the config_minigame.lua, place this after lockpick.
--- Enjoy !
 
 
 --░██████╗████████╗░█████╗░██████╗░███╗░░░███╗██████╗░░█████╗░███╗░░░███╗
