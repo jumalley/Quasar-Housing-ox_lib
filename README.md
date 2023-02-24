@@ -33,7 +33,7 @@ AddEventHandler('qs-housing:client:Lockpicking', function()
                         if not Config.Houses[closesthouse].IsRaming then
                             local lockpickTime = 7500
                             LockpickDoorAnim(lockpickTime)
-                            local lockpickFinish = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy'})
+                            local lockpickFinish = lib.skillCheck({'easy', 'easy', 'easy'})
                             if lockpickFinish then
                             lib.progressCircle({
                             FreezeEntityPosition(Ped, true),
@@ -58,7 +58,7 @@ AddEventHandler('qs-housing:client:Lockpicking', function()
                             ClearPedSecondaryTask(PlayerPedId())
                             else
                             ClearPedSecondaryTask(PlayerPedId())
-                            exports['okokNotify']:Alert("Braquage", "Vous avez raté !", 5000, 'error')
+                            exports['okokNotify']:Alert("Burglary", "You have failed !", 5000, 'error')
                             DoRamAnimation(false)
                             end
                             if math.random(1, 100) < 50 then -- 50% change to call cops.
@@ -106,7 +106,7 @@ AddEventHandler('qs-housing:client:HomeInvasion', function()
             if Config.Houses[closesthouse].locked then
                 if not Config.Houses[closesthouse].IsRaming then
                 DoRamAnimation(true)
-                local success = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy'})
+                local success = lib.skillCheck({'easy', 'easy', 'easy'})
                 if success then
                 lib.progressCircle({
               FreezeEntityPosition(Ped, true),
@@ -130,7 +130,7 @@ AddEventHandler('qs-housing:client:HomeInvasion', function()
           SendTextMessage(Lang("OPEN_THE_DOOR"), 'success')
           DoRamAnimation(false)
       else
-      exports['okokNotify']:Alert("Police", "Vous avez raté !", 5000, 'error')
+      exports['okokNotify']:Alert("Stormram", "You have failed !", 5000, 'error')
       DoRamAnimation(false)
       end
 
