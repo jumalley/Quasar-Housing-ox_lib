@@ -1,6 +1,6 @@
-# quasar-housing-ox_lib
+# qs-housing X ox_lib
 
-**Quasar Housing** using **ox_lib**
+**Qs-Housing** using **ox_lib**
 
 ```lua
 -- * config_minigames.lua
